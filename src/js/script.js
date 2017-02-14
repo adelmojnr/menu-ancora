@@ -1,7 +1,7 @@
-var altura = 0;
-var destino = 0;
-var velocidade = 10;
-var scroller = null;
+var altura = 0,
+	destino = 0,
+	velocidade = 10,
+ 	scroller = null;
 
 function scrollInicio(elementId) {
 	destino = document.getElementById(elementId).offsetTop;
@@ -16,7 +16,8 @@ function scrollInicio(elementId) {
 		clearTimeout(scroller);
 	}
 
-	//console.log(destino);
+	console.log(destino);
+
 	window.scroll(0, altura);
 
 }
