@@ -3,11 +3,11 @@ destino = 0,
 velocidade = 10,
 scroller = null;
 
-function scrollInicio(elementId) {
+function lazyScrollTo(elementId) {
 	destino = document.getElementById(elementId).offsetTop;
 	
 	scroller = setTimeout(function(){
-		scrollInicio(elementId);
+		lazyScrollTo(elementId);
 	}, 1);
 
 	altura = altura + velocidade;
